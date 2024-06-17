@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex:auto
+}
+article{
+    flex:2;
+    overflow-y: auto
+}
+aside{
+    flex:1;
+    overflow-y: auto
+}
+#x-logo{
+    height: 16px
+}
+
+header .right{
+    display: flex;
+    gap: 10px;
+}
+header .right a{
+    text-decoration: none;
+}
+header .right .share-txt{
+    color: #385898;
+    cursor: pointer;
+    text-decoration: none!important;
+    font-size: 11px
+}
+
+footer{
+    text-align: center;
+}
