@@ -1,38 +1,177 @@
-body{
-    display: flex;
-    flex-direction: column;
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
-main{
-    display: flex;
-    flex-direction: row;
-    flex:auto
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  margin-top: 50px;
+  margin-inline:50px;
 }
-article{
-    flex:2;
-    overflow-y: auto
+article {
+  flex: 2;
+  overflow-y: auto;
+  padding:0px 40px;
 }
-aside{
-    flex:1;
-    overflow-y: auto
+aside {
+  flex: 1;
+  overflow-y: auto;
 }
-#x-logo{
-    height: 16px
+#x-logo {
+  height: 16px;
+}
+header {
+  background-color: #333;
+  padding: 1rem;
 }
 
-header .right{
-    display: flex;
-    gap: 10px;
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
-header .right a{
+
+.logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.logo img{
+    height: 40px;
+}
+
+.menus {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menus li {
+  margin-left: 1rem;
+}
+
+.menus a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+header .right {
+  display: flex;
+  gap: 10px;
+}
+header .right a {
+  text-decoration: none;
+}
+header .right .share-txt {
+  color: #385898;
+  cursor: pointer;
+  text-decoration: none !important;
+  font-size: 11px;
+}
+/* banner */
+#banner {
+  background: url("https://img.freepik.com/free-photo/flat-lay-camera-passport-arrangement_23-2148786133.jpg?t=st=1718679570~exp=1718683170~hmac=7d7c81b3f8048c9e8996c5cb357d54b50e03afc1c847e27982c00361932b0390&w=1380")
+    no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+#banner .container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#banner p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+/* footer */
+footer {
+    margin-top: 50px;
+  text-align: center;
+  background-color: #333;
+  padding: 1rem;
+  color: white;
+  
+}
+footer a{
     text-decoration: none;
-}
-header .right .share-txt{
-    color: #385898;
-    cursor: pointer;
-    text-decoration: none!important;
-    font-size: 11px
+    color: #e11c3e;
 }
 
-footer{
-    text-align: center;
+/*  */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.card__header img{
+        width: 100%;
+        height: 300px;
+        display: block;
+        object-fit: cover;
+}
+
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+
+.tag {
+  align-self: flex-start;
+  padding: .25em .75em;
+  border-radius: 1em;
+  font-size: .75rem;
+}
+
+.tag + .tag {
+  margin-left: .5em;
+}
+
+.tag-blue {
+  background: #56CCF2;
+background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+  color: #fafafa;
+}
+
+.tag-brown {
+  background: #D1913C;
+background: linear-gradient(to bottom, #FFD194, #D1913C);
+  color: #fafafa;
+}
+
+.tag-red {
+  background: #cb2d3e;
+background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  color: #fafafa;
+}
+.tag-green{
+    background:  #44b678;
+background: linear-gradient(to bottom,  #44b678,  #63e49d);
+  color: #fafafa;
+   
+}
+
+.card__body h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
 }

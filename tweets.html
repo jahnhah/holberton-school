@@ -3,29 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical"
+  href="http://15.237.57.67/holberton-school">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/tweets.css">
+  <meta name="twitter:card" content="summary"></meta>
     <title>Tweets</title>
+
 </head>
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0&appId=437191408650191" nonce="QIsEajqy"></script>
     <header>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tweets.html">tweets</a></li>
-        </ul>
+        <div class="container">
+          <a href="#" class="logo"><img src="assets/images/holberton-logo.png"></a>
+          <ul class="menus">
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/tweets.html">Tweets</a></li>
+          </ul>
+          <div class="right">
+            <div class="fb-share-button" data-href="http://15.237.57.67/holberton-school" data-layout="" data-size=""><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+            <div class="x-share-button">
+                <a href="http://twitter.com/intent/tweet?url=http://15.237.57.67/holberton-school"><img src="./assets/images/x-logo.png" id="x-logo"><span class="share-txt">Share</span></a>
+            </div>
+        </div>
+        </div>
     </header>
+    <div id="banner">
+        <div class="container">
+          <h1>Bienvenue sur My Travel #tweets</h1>
+        </div>
+    </div>
+      
     <main>
-        
         <article>
             <!-- tweeter integration -->
             <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Slow motion liftoff of Starship on Flight 4 <a href="https://t.co/9itFbrfxW7">pic.twitter.com/9itFbrfxW7</a></p>&mdash; SpaceX (@SpaceX) <a href="https://twitter.com/SpaceX/status/1798730164232421498?ref_src=twsrc%5Etfw">June 6, 2024</a></blockquote> 
             <!-- end tweeter integration -->
         </article>
-        <aside>
-            <p>placeholder to add comment thread later</p>
-        </aside>
     </main>
     <footer>
         <p>Made by Jahnhah Craven Feliciano for <a href="https://apply.holbertonschool.com" target="_blank">Holberton School</a></p>
     </footer>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
+
+<script>
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://holberton-test-13.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </html>
